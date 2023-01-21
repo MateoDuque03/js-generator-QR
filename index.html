@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Código QR con Javascript</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos.css" />
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+
+<body>
+  <div class="title">
+    <h2>Generador de codigos QR</h2>
+  </div>
+  <div class="container">
+    <form action="" class="form" id="formQR">
+      <input type="text" name="link" id="link" placeholder="Ingresa la URL" autocomplete="off">
+      <button class="btn" id="generateQR">Generar QR</button>
+    </form>
+    <div id="contenedorQR" class="contenedorQR">
+    </div>
+  </div>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>¡Debe ingresar un dato valido!</p>
+    </div>
+  </div>
+
+  <footer class="footer-end">
+    <!-- Copyright -->
+    <div class="container-footer">
+      © 2023 Copyright:
+      <b><a class="text-dark" href="https://github.com/MateoDuque03">Duvan Mateo Duque</a></b>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</body>
+
+</html>
